@@ -383,6 +383,7 @@ a {
   background-color: rgba(47, 48, 58, 0.8);
   text-decoration: none;
   text-transform: uppercase;
+  line-height: 1;
 }
 /* team members section */
 .team {
@@ -483,7 +484,7 @@ a {
   font-size: 36px;
   font-weight: var(--font-size-bold);
   text-align: center;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   line-height: 1.166;
   text-transform: uppercase;
 }
@@ -580,7 +581,7 @@ a {
   font-size: 14px;
   font-weight: var(--font-size-bold);
   /* text-align: center; */
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   line-height: 1.166;
   text-transform: uppercase;
 }
@@ -660,7 +661,7 @@ a {
   font-size: 18px;
   font-weight: var(--font-size-regular);
   line-height: 1.55;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   color: var(--main-color);
   background-color: rgba(33, 150, 243, 0.9);
   overflow: hidden;
@@ -669,6 +670,7 @@ a {
   transition-timing-function: var(--cubic-bezier);
 }
 .portfolio-item:hover,
+.portfolio-item:focus,
 .portfolio-item:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);

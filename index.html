@@ -49,6 +49,16 @@
         </ul>
       </div>
     </header>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-form"></p>
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-close" width="30" height="30">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <main>
       <!-- site presentation section -->
       <section class="hero">
@@ -56,7 +66,9 @@
           <li class="item-header">
             <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
           </li>
-          <li class="item-button"><button type="button" class="btn">Замовити послугу</button></li>
+          <li class="item-button">
+            <button type="button" class="btn" data-modal-open>Замовити послугу</button>
+          </li>
         </div>
       </section>
       <!-- list of advanatages -->
@@ -117,7 +129,7 @@
           <h2 class="examples-header">Чим ми займаємося</h2>
           <!-- pictures work examples -->
           <ul class="list">
-            <li class="item">
+            <li class="item-examples">
               <img
                 src="./images/img_pictures_examples1.jpg"
                 alt="людина набирає текст на клавіатурі"
@@ -125,8 +137,9 @@
                 height="294"
                 class="examples-img"
               />
+              <p class="examples-overlay">Десктопні додатки</p>
             </li>
-            <li class="item">
+            <li class="item-examples">
               <img
                 src="./images/img_pictures_examples2.jpg"
                 alt="людина перед ноутбуком зі смартфоном розглядає як виглядають макети відображення матеріалу на смартфоні"
@@ -134,8 +147,9 @@
                 height="294"
                 class="examples-img"
               />
+              <p class="examples-overlay">Мобільні додатки</p>
             </li>
-            <li class="item">
+            <li class="item-examples">
               <img
                 src="./images/img_pictures_examples3.jpg"
                 alt="людина тримає планшет з зображенням"
@@ -143,6 +157,7 @@
                 height="294"
                 class="examples-img"
               />
+              <p class="examples-overlay">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -419,5 +434,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

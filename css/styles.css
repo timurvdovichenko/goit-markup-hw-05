@@ -173,6 +173,9 @@ a {
   text-decoration: none;
   line-height: 1.142;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 .contacts {
   display: flex;
@@ -188,6 +191,9 @@ a {
   text-decoration: none;
   line-height: 1.142;
   letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 .icon-mailto,
 .icon-telephone {
@@ -199,9 +205,9 @@ a {
 .nav .link:hover {
   color: var(--text-focus-color);
   fill: var(--text-focus-color);
-  transition-property: color, fill;
+  /* transition-property: color, fill;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition-timing-function: var(--cubic-bezier); */
 }
 .current .link {
   color: var(--text-focus-color);
@@ -452,6 +458,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color, fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 .icon-social:hover,
 .icon-social:focus,
@@ -459,9 +468,9 @@ a {
 .social-icons-footer .icon-social:focus {
   fill: var(--main-color);
   background-color: var(--buttons-color);
-  transition-property: background-color, fill;
+  /* transition-property: background-color, fill;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition-timing-function: var(--cubic-bezier); */
 }
 /* Clients Section */
 .clients {
@@ -495,14 +504,17 @@ a {
   border-width: 1px;
   border-radius: 4px;
   fill: var(--icons-main);
+  transition-property: fill, border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 .clients-list .client-link:hover,
 .clients-list .client-link:focus {
   fill: var(--icons-hover);
   border-color: var(--icons-hover);
-  transition-property: background-color, fill;
+  /* transition-property: fill, border-color;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition-timing-function: var(--cubic-bezier); */
 }
 
 .clients-list .client:not(:last-child) {
@@ -553,6 +565,9 @@ a {
 .social-icons-footer .icon-social {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--main-color);
+  transition-property: background-color, fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .footer-text-social {
@@ -606,13 +621,15 @@ a {
   font-weight: 500;
   text-align: center;
   line-height: 1.63;
+  transition-property: background-color, color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 .list-buttons .btn:hover,
 .list-buttons .btn:focus {
-  transition-property: background-color, color;
-  /* transition-duration: 2500ms; */
+  /* transition-property: background-color, color;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition-timing-function: var(--cubic-bezier); */
   color: var(--main-color);
   background-color: var(--text-focus-color);
 
@@ -647,14 +664,17 @@ a {
   color: var(--main-color);
   background-color: rgba(33, 150, 243, 0.9);
   overflow: hidden;
+  transition-property: transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--cubic-bezier);
 }
 .portfolio-item:hover,
 .portfolio-item:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
-  transition-property: transform;
+  /* transition-property: transform;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition-timing-function: var(--cubic-bezier); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

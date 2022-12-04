@@ -669,9 +669,9 @@ a {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic-bezier);
 }
-.portfolio-item:hover,
-.portfolio-item:focus,
-.portfolio-item:hover .portfolio-overlay,
+.portfolio-link:hover,
+.portfolio-link:focus,
+.portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
   /* transition-property: transform;
@@ -726,4 +726,5 @@ a {
 }
 .portfolio-link {
   text-decoration: none;
+  display: block;
 }
